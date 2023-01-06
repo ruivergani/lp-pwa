@@ -1,9 +1,9 @@
 {
-  "name": "codeboost-gulp",
+  "name": "pwa-foodapp",
   "version": "1.0.0",
-  "description": "Um projeto criado par ao codeboost",
+  "description": "A project created for university assignment",
   "main": "index.js",
-  "author": "William Moreira",
+  "author": "Rui Vergani Neto",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.16.0",

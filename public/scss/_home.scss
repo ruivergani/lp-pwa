@@ -50,6 +50,12 @@
 input{
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
+  margin-top: 2rem !important;
+  font-size: 1.6rem !important;
+}
+label{
+  font-size: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 .side-form button{
   box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
@@ -58,16 +64,19 @@ input{
   h6{
     font-size: 2rem;
   }
-  label{
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-  input{
-    margin-top: 1rem !important;
-  }
 }
 form .input-field{
   margin-top: 30px;
+}
+.login-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .register-link{
+    margin-left: 4rem;
+    text-decoration: underline;
+  }
 }
 
 // Section Sub Pages

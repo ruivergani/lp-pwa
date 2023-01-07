@@ -144,6 +144,13 @@ header nav .sidenav-trigger {
 input {
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
+  margin-top: 2rem !important;
+  font-size: 1.6rem !important;
+}
+
+label {
+  font-size: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .side-form button {
@@ -154,16 +161,29 @@ input {
 .add-recipe h6 {
   font-size: 2rem;
 }
-.add-recipe label {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-.add-recipe input {
-  margin-top: 1rem !important;
-}
 
 form .input-field {
   margin-top: 30px;
+}
+
+.login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.login-form .register-link {
+  margin-left: 4rem;
+  text-decoration: underline;
 }
 
 .s-subpage {

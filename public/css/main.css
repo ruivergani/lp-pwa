@@ -151,6 +151,17 @@ input {
   box-shadow: 1px 1px 3px rgba(90, 90, 90, 0.2);
 }
 
+.add-recipe h6 {
+  font-size: 2rem;
+}
+.add-recipe label {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.add-recipe input {
+  margin-top: 1rem !important;
+}
+
 form .input-field {
   margin-top: 30px;
 }

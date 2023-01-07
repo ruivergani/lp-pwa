@@ -41,6 +41,9 @@
 // Section Button
 .s-button{
   margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 // Section Forms
@@ -79,4 +82,19 @@ form .input-field{
 .m-2{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+// Preloader configuration
+#preloader{
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 2022;
+  transition: all .3s ease-in-out;
 }

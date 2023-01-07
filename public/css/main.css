@@ -145,3 +145,29 @@ input {
 form .input-field {
   margin-top: 30px;
 }
+
+.s-subpage {
+  padding-top: 2rem;
+}
+.s-subpage .title {
+  padding-bottom: 2rem;
+}
+.s-subpage .title h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.s-subpage h6 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+.s-subpage p, .s-subpage ul li {
+  color: #5F5C6B;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+
+.m-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

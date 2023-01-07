@@ -1,0 +1,38 @@
+h1,h2,h3,h4{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2{
+    line-height: 112%;
+    letter-spacing: -1px;
+}
+h3,h4{
+    letter-spacing: -0.5px;
+    font-weight: 500;
+}
+
+h1{
+    /* D. Heading/Title-64 */
+    font-weight: 600;
+    font-size: 6.4rem;
+}
+h2{
+    /* D. Heading/Title-40 */
+    font-weight: 700;
+    font-size: 4rem;
+}
+h3{
+    /* D. Heading/Title-24 */
+    font-size: 2.4rem;
+    line-height: 150%;
+}
+h4{
+    /* D. Heading/Title-20 */
+    font-size: 2rem;
+    line-height: 112%;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 150%;
+}

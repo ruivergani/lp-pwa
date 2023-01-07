@@ -1,1 +1,1 @@
-"use strict";
+"use strict";document.addEventListener("DOMContentLoaded",function(){var e=document.querySelectorAll(".side-menu"),e=(M.Sidenav.init(e,{edge:"right"}),document.querySelectorAll(".side-form"));M.Sidenav.init(e,{edge:"left"})});

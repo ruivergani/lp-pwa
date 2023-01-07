@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+html,
+body{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+}
+button{
+    background-color: transparent;
+    cursor: pointer;
+}

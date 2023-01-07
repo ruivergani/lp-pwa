@@ -83,6 +83,10 @@ header nav .sidenav-trigger {
   margin: 0rem;
 }
 
+.sidenav li a i {
+  margin: 0 15px 0 0 !important;
+}
+
 /* recipe styles */
 .recipes {
   margin-top: 20px;

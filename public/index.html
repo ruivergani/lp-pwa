@@ -34,98 +34,40 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Navigation Top -->
   <header>
     <nav class="z-depth-0 teal lighten-1">
       <div class="nav-wrapper container">
         <a href="/">Recipe<span> App</span></a>
-        <span class="right ">
-          <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
-        </span>
       </div>
     </nav>
   </header>
-  
-  <!-- Side Navigation Menu  -->
-  <ul id="side-menu" class="sidenav side-menu">
-    <li><a class="subheader">Recipe App</a></li>
-    <li><a href="/" class="waves-effect">Home</a></li>
-    <li><a href="/pages/about.html" class="waves-effect">About</a></li>
-    <li><a href="/pages/faqs.html" class="waves-effect">FAQs</a></li>
-    <li><a href="/pages/extra.html" class="waves-effect">Extra Information</a></li>
-    <li><div class="divider"></div></li>
-    <li><a href="/pages/contact.html" class="waves-effect">
-      <i class="material-icons">mail_outline</i>Contact</a>
-    </li>
-  </ul>
 
-  <!-- All Recipes Template  -->
-  <section class="s-recipes container grey-text text-darken-1">
-    <!-- Card Panel for each item -->
-    <div class="card-panel recipe white row">
-      <!-- Use suitable and optimised media of the correct format -->
-      <picture>
-        <!-- Min Width: 200px-->
-        <source srcset="./img/dish.webp" media="(min-width: 200px)" type="image/webp">
-        <!-- Fallback image -->
-        <img src="./img/fallback_dish.png" alt="Noodles dish" title="Noodles dish" loading="lazy">
-      </picture>
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-    <div class="card-panel recipe white row">
-      <!-- Use suitable and optimised media of the correct format -->
-      <picture>
-        <!-- Min Width: 200px-->
-        <source srcset="./img/pizza.webp" media="(min-width: 200px)" type="image/webp">
-        <!-- Fallback image -->
-        <img src="./img/fallback_pizza.jpg" alt="Noodles dish" title="Noodles dish" loading="lazy">
-      </picture>
-      <div class="recipe-details">
-        <div class="recipe-title">Pizza Pepperoni</div>
-        <div class="recipe-ingredients">Tomato Sauce, Cheese and Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-  </section>
-
-  <!-- Add Button Recipe -->
-  <!-- Contain at least one example of another component-->
-  <section class="s-button">
-    <button class="center">
-      <a class="btn-floating add-btn sidenav-trigger" data-target="side-form">
-        <i class="material-icons">add</i>
-      </a>
-    </button>
-  </section>
-  
-  <!-- Add Recipe Side Navigation Form-->
-  <div id="side-form" class="sidenav side-form">
-      <!-- Form Requirements -->
-      <form class="add-recipe container section">
-        <h6>New Recipe</h6>
-        <div class="divider"></div>
-        <div class="input-field">
-          <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
-          <label for="title">Recipe Title</label>
+  <!-- Login Form -->
+  <div class="container">
+    <form action="" class="col s12 login-form">
+        <div class="row center-align">
+            <div class="input-field col s12">
+                <input type="text" placeholder="Type your e-mail" id="email" class="validate">
+                <label for="email">E-mail</label>
+            </div>
+            <div class="input-field col s12">
+                <input type="password" placeholder="Type your password" id="password" class="validate">
+                <label for="password">Senha</label>
+            </div>
+            <a href="./index.html" class="waves-effect waves-light btn">LOGIN<i class="material-icons right">login</i></a>
+            <!-- Link to a register screen -->
+            <a href="./register.html" class="register-link">Register</a>
         </div>
-        <div class="input-field">
-          <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
-          <label for="ingredients">Ingredients</label>
-        </div>
-        <div class="input-field center">
-          <button class="btn-small">Add</button>
-        </div>
-      </form>
+    </form>
   </div>
+  
+
+
+  
+  
+
 
   <!-- JavaScript Links -->
   <script src="js/plugins.js"></script>

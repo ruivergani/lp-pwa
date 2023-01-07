@@ -1,0 +1,27 @@
+{
+    "name": "Recipe App", 
+    "short_name": "Recipe App",
+    "id": "/?homescreen=1",
+    "icons": [
+        {
+            "src": "./images/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "./images/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "theme_color": "#009688",
+    "scope": "/index.html",
+    "background_color": "#e0f2f1",
+    "description": "Cat web page to practice with pwas, tutorial week3.",
+    "lang": "en",
+    "orientation": "any",
+    "prefer_related_applications": true,
+    "display": "standalone"
+}

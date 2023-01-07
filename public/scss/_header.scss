@@ -1,0 +1,15 @@
+// Header
+header{
+    nav{
+        a{
+            text-transform: uppercase;
+            span{
+                font-weight: bold;
+            }
+        }
+        .sidenav-trigger{
+            margin: 0rem;
+        }
+        border-bottom: 2px solid $brand-teal-darken-3;
+    }
+}

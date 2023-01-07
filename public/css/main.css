@@ -70,6 +70,19 @@ p {
   line-height: 150%;
 }
 
+header nav {
+  border-bottom: 2px solid #00695c;
+}
+header nav a {
+  text-transform: uppercase;
+}
+header nav a span {
+  font-weight: bold;
+}
+header nav .sidenav-trigger {
+  margin: 0rem;
+}
+
 /* recipe styles */
 .recipes {
   margin-top: 20px;

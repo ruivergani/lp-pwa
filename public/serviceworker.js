@@ -1,6 +1,6 @@
 //set up cache name and files to add to it
-const staticCacheName = 'site-static-v3';
-const dynamicCacheName = 'site-dynamic-v3';
+const staticCacheName = 'site-static-v7';
+const dynamicCacheName = 'site-dynamic-v7';
 const assets = [
   "/",
   "index.html",

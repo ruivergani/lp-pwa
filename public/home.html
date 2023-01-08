@@ -78,39 +78,7 @@
 
   <!-- All Recipes Template  -->
   <section class="s-recipes container grey-text text-darken-1">
-    <!-- Card Panel for each item -->
-    <div class="card-panel recipe white row">
-      <!-- Use suitable and optimised media of the correct format -->
-      <picture>
-        <!-- Min Width: 200px-->
-        <source srcset="./img/dish.webp" media="(min-width: 200px)" type="image/webp">
-        <!-- Fallback image -->
-        <img src="./img/fallback_dish.png" alt="Noodles dish" title="Noodles dish" loading="lazy">
-      </picture>
-      <div class="recipe-details">
-        <div class="recipe-title">Edame Noodles</div>
-        <div class="recipe-ingredients">Edame Beans, Noodels, Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
-    <div class="card-panel recipe white row">
-      <!-- Use suitable and optimised media of the correct format -->
-      <picture>
-        <!-- Min Width: 200px-->
-        <source srcset="./img/pizza.webp" media="(min-width: 200px)" type="image/webp">
-        <!-- Fallback image -->
-        <img src="./img/fallback_pizza.jpg" alt="Noodles dish" title="Noodles dish" loading="lazy">
-      </picture>
-      <div class="recipe-details">
-        <div class="recipe-title">Pizza Pepperoni</div>
-        <div class="recipe-ingredients">Tomato Sauce, Cheese and Garlic oil</div>
-      </div>
-      <div class="recipe-delete">
-        <i class="material-icons">delete_outline</i>
-      </div>
-    </div>
+    <!-- Card will be displayed here using JS-->
   </section>
 
   <!-- Add Button Recipe -->
@@ -173,22 +141,7 @@
         </div>
       </form>
   </div>
-  <!-- Service Worker -->
-  <script>
-    //check whether browser support service workers
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-        navigator.serviceWorker.register('serviceworker.js').then(
-       function(registration) {
-       console.log('Service worker registration successful',registration);
-       }, 
-      function(err) {
-       console.log('Service worker registration failed', err);
-            });
-        });
-    }
-  </script>
-  <script src="./serviceworker.js"></script>
+  
   <!-- Database Firebase -->
   <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
   <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
@@ -206,6 +159,22 @@
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
   </script>
+  <!-- Service Worker -->
+  <script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+        navigator.serviceWorker.register('serviceworker.js').then(
+       function(registration) {
+       console.log('Service worker registration successful',registration);
+       }, 
+      function(err) {
+       console.log('Service worker registration failed', err);
+            });
+        });
+    }
+  </script>
+  <script src="./serviceworker.js"></script>
   <!-- JavaScript Links -->
   <script src="js/plugins.js"></script>
   <script src="js/all.js"></script>

@@ -73,22 +73,6 @@
         <p>Our recipes primarily use fresh, unprocessed ingredients but we also believe there is a time and a place for canned, frozen, and other prepared ingredients. We believe in a diet that includes a wide variety of foods: real butter and cream, extra virgin olive oil, eggs, lots of fruits and vegetables, and protein from meat, fish, beans, and cheese. Plus cake for dessert.</p>
     </section>
 
-    <!-- Service Worker -->
-    <script>
-        //check whether browser support service workers
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-            navigator.serviceWorker.register('../serviceworker.js').then(
-        function(registration) {
-        console.log('Service worker registration successful',registration);
-        }, 
-        function(err) {
-        console.log('Service worker registration failed', err);
-                });
-            });
-        }
-    </script>
-    <script src="../serviceworker.js"></script>
     <!-- Database Firebase -->
     <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
     <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
@@ -106,6 +90,22 @@
         firebase.initializeApp(firebaseConfig);
         const db = firebase.firestore();
     </script>
+    <!-- Service Worker -->
+    <script>
+        //check whether browser support service workers
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+            navigator.serviceWorker.register('../serviceworker.js').then(
+        function(registration) {
+        console.log('Service worker registration successful',registration);
+        }, 
+        function(err) {
+        console.log('Service worker registration failed', err);
+                });
+            });
+        }
+    </script>
+    <script src="../serviceworker.js"></script>
     <!-- JavaScript Links -->
     <script src="../js/plugins.js"></script>
     <script src="../js/all.js"></script>

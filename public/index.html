@@ -75,13 +75,22 @@
         </div>
     </form>
   </div>
-  
-
-
-  
-  
-
-
+  <!-- Service Worker -->
+  <script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+        navigator.serviceWorker.register('serviceworker.js').then(
+       function(registration) {
+       console.log('Service worker registration successful',registration);
+       }, 
+      function(err) {
+       console.log('Service worker registration failed', err);
+            });
+        });
+    }
+  </script>
+  <script src="./serviceworker.js"></script>
   <!-- JavaScript Links -->
   <script src="js/plugins.js"></script>
   <script src="js/all.js"></script>

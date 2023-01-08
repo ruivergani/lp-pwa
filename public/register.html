@@ -33,6 +33,7 @@
 </head>
 
 <body class="grey lighten-4">
+    
     <!-- Navigation Top -->
     <header>
         <nav class="z-depth-0 teal lighten-1">
@@ -65,10 +66,26 @@
             <div class="divider"></div>
         </div>
     </section>
-
-  <!-- JavaScript Links -->
-  <script src="../js/plugins.js"></script>
-  <script src="../js/all.js"></script>
+    
+    <!-- Service Worker -->
+    <script>
+        //check whether browser support service workers
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+            navigator.serviceWorker.register('serviceworker.js').then(
+        function(registration) {
+        console.log('Service worker registration successful',registration);
+        }, 
+        function(err) {
+        console.log('Service worker registration failed', err);
+                });
+            });
+        }
+    </script>
+    <script src="./serviceworker.js"></script>
+    <!-- JavaScript Links -->
+    <script src="../js/plugins.js"></script>
+    <script src="../js/all.js"></script>
 </body>
 </html>
 

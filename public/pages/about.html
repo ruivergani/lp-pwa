@@ -70,9 +70,25 @@
         <p>Our recipes primarily use fresh, unprocessed ingredients but we also believe there is a time and a place for canned, frozen, and other prepared ingredients. We believe in a diet that includes a wide variety of foods: real butter and cream, extra virgin olive oil, eggs, lots of fruits and vegetables, and protein from meat, fish, beans, and cheese. Plus cake for dessert.</p>
     </section>
 
-  <!-- JavaScript Links -->
-  <script src="../js/plugins.js"></script>
-  <script src="../js/all.js"></script>
+    <!-- Service Worker -->
+    <script>
+        //check whether browser support service workers
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+            navigator.serviceWorker.register('../serviceworker.js').then(
+        function(registration) {
+        console.log('Service worker registration successful',registration);
+        }, 
+        function(err) {
+        console.log('Service worker registration failed', err);
+                });
+            });
+        }
+    </script>
+    <script src="../serviceworker.js"></script>
+    <!-- JavaScript Links -->
+    <script src="../js/plugins.js"></script>
+    <script src="../js/all.js"></script>
 </body>
 </html>
 

@@ -55,9 +55,12 @@ input{
   color: $grey-600 !important;
 }
 label{
-  font-size: 2rem !important;
+  font-size: 1.6rem !important;
   margin-bottom: 1rem !important;
   color: $grey-600 !important;
+}
+label.text-field{
+  font-size: 2rem !important;
 }
 .side-form button{
   box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
@@ -80,11 +83,20 @@ form .input-field{
     text-decoration: underline;
   }
 }
+
 .select-wrapper input.select-dropdown {
   display: inline-block !important;
 }
-.select-wrapper+label {
-  font-size: 1.6rem !important;
+.radio-buttons{
+  margin-top: 2rem;
+  p{
+    margin-top: 1rem;
+    label{
+      span{
+        font-size: 1.6rem !important;
+      }
+    }
+  }
 }
 
 // Section Sub Pages

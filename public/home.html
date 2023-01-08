@@ -126,18 +126,18 @@
   <!-- Add Recipe Side Navigation Form-->
   <div id="side-form" class="sidenav side-form">
       <!-- Form Requirements -->
-      <form class="add-recipe container section">
+      <form class="add-recipe container">
         <h6>New Recipe</h6>
         <div class="divider"></div>
         <!-- Text input field -->
         <div class="input-field">
           <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
-          <label for="title">Recipe Title</label>
+          <label for="title" class="text-field">Recipe Title</label>
         </div>
         <!-- Text input field -->
         <div class="input-field">
           <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
-          <label for="ingredients">Ingredients</label>
+          <label for="ingredients" class="text-field">Ingredients</label>
         </div>
         <!-- Select field -->
         <div class="input-field">
@@ -150,6 +150,22 @@
             <option value="3">45+ minutes</option>
           </select>
           <label>Average Cooking Time</label>
+        </div>
+        <!-- Radio Buttons Type -->
+        <div class="radio-buttons">
+          <label>Recommended Cooking Option</label>
+          <p>
+            <label>
+              <input name="group1" type="radio" checked />
+              <span>Microwave</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="group1" type="radio" />
+              <span>Oven</span>
+            </label>
+          </p>
         </div>
         <!-- Button component -->
         <div class="input-field center">

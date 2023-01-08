@@ -201,6 +201,10 @@ form .input-field {
   font-size: 1.6rem !important;
 }
 
+.sidenav {
+  padding-top: 3rem;
+}
+
 .s-subpage {
   padding-top: 2rem;
 }

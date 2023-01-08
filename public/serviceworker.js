@@ -9,8 +9,16 @@ const CACHE_URLS = [
   "pages/contact.html",
   "pages/extra.html",
   "pages/faqs.html",
+  "pages/fallback.html",
   "manifest.json",
   "css/main.css",
+  "css/plugins.css",
+  "js/all.js",
+  "js/plugins.js",
+  "https://fonts.googleapis.com/icon?family=Material+Icons",
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js",
+  "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap",
+  "https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2",
   "img/dish.webp",
   "img/fallback_dish.png",
   "img/fallback_lasagne.jpg",
@@ -80,3 +88,19 @@ self.addEventListener("fetch", function (event) {
     })
   );
 });
+
+// On Network Response
+const onNetworkResponse = (event) => {
+  event.respondWith(
+    caches.open("mysite-dynamic").then(async function (cache) {
+      const response = await cache.match(event.request);
+      return (
+        response ||
+        fetch(event.request).then(function (response_1) {
+          cache.put(event.request, response_1.clone());
+          return response_1;
+        })
+      );
+    })
+  );
+};

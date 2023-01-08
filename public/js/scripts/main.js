@@ -51,6 +51,7 @@ db.collection('recipes').onSnapshot((snapshot) => {
     }
     if(change.type === 'removed'){
       // remove the document data from web page
+      removeRecipe(change.doc.id); // id of the doc removed
     }
   })
 });
@@ -96,3 +97,18 @@ form.addEventListener('submit', evt => {
   form.title.value = '';
   form.ingredients.value = '';
 });
+
+// Delete Recipe
+const recipeContainer = document.querySelector('.s-recipes');
+recipeContainer.addEventListener('click', evt => {
+  if(evt.target.tagName === 'I'){
+    const id =  evt.target.getAttribute('data-id'); //  get the id attribute
+    db.collection('recipes').doc(id).delete();
+  }
+});
+
+// Remove Recipe function
+const removeRecipe = (id) => {
+  const recipe = document.querySelector(`.recipe[data-id=${id}]`);
+  recipe.remove();
+}

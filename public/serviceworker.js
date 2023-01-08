@@ -105,6 +105,10 @@ self.addEventListener('activate', evt => {
 
 // Fetch Event
 self.addEventListener('fetch', evt => {
+  // check if request is made by chrome extensions or web page
+  // if request is made for web page url must contains http.
+  if (!(evt.request.url.indexOf('http') === 0)) return; // skip the request. if request is not made with http protocol
+
   if(evt.request.url.indexOf('firestore.googleapis.com') === -1){
     evt.respondWith(
       caches.match(evt.request).then(cacheRes => {

@@ -1,5 +1,5 @@
 //set up cache name and files to add to it
-const CACHE_NAME = "recipe-v1";
+const CACHE_NAME = "my-site-v1";
 const CACHE_URLS = [
   "/",
   "index.html",
@@ -14,7 +14,6 @@ const CACHE_URLS = [
   "img/dish.webp",
   "img/fallback_dish.png",
   "img/fallback_lasagne.jpg",
-  "img/fallback_lasagne.jpg",
   "img/fallback_pizza.jpg",
   "img/fallback_rice.jpg",
   "img/lasagne.webp",
@@ -24,7 +23,6 @@ const CACHE_URLS = [
   "img/icons/icon-144x144.png",
   "img/icons/icon-152x152.png",
   "img/icons/icon-192x192.png",
-  "img/icons/icon-384x384.png",
   "img/icons/icon-384x384.png",
   "img/icons/icon-512x512.png",
   "img/icons/icon-72x72.png",
@@ -49,6 +47,7 @@ self.addEventListener("install", function (event) {
 
 //On activate update the cache with the new version and clean out old caches
 self.addEventListener("activate", function (event) {
+  console.log('Service worker activated');
   event.waitUntil(
     caches.keys().then(function (cacheNames) {
       return Promise.all(

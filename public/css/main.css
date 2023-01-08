@@ -227,6 +227,27 @@ form .input-field {
   margin-bottom: 2rem;
 }
 
+.collapsible li {
+  padding-bottom: 0px !important;
+}
+.collapsible .collapsible-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.collapsible .collapsible-header i {
+  font-weight: 600;
+}
+.collapsible .collapsible-header p {
+  padding-bottom: 0px;
+}
+
 #preloader {
   top: 0px;
   left: 0px;

@@ -125,6 +125,25 @@ form .input-field{
   margin-bottom: 2rem;
 }
 
+// Page FAQs
+.collapsible{
+  li{
+    padding-bottom: 0px !important;
+  }
+  .collapsible-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i{
+      font-weight: 600;
+    }
+    p{
+      padding-bottom: 0px;
+    }
+  }
+}
+
+
 // Preloader configuration
 #preloader{
   top: 0px;

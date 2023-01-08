@@ -14,7 +14,10 @@
     // Hide the preloader div
     preloader.style.display = "none";
   }
-  // Initialize the dropdown form select
+  // Initialize the elements
   $(document).ready(function(){
+    // Select Materialize
     $('select').formSelect();
+    // Collapsible Feature
+    $('.collapsible').collapsible();
   });

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() { // wait for DOM content to load
+  document.addEventListener('DOMContentLoaded', function() { // wait for DOM content to load
     // Nav Menu
     const menus = document.querySelectorAll('.side-menu');
     M.Sidenav.init(menus, {edge: 'right'});
@@ -14,3 +14,7 @@ document.addEventListener('DOMContentLoaded', function() { // wait for DOM conte
     // Hide the preloader div
     preloader.style.display = "none";
   }
+  // Initialize the dropdown form select
+  $(document).ready(function(){
+    $('select').formSelect();
+  });

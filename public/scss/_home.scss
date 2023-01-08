@@ -52,10 +52,12 @@ input{
   -webkit-box-shadow: none !important;
   margin-top: 2rem !important;
   font-size: 1.6rem !important;
+  color: $grey-600 !important;
 }
 label{
   font-size: 2rem !important;
   margin-bottom: 1rem !important;
+  color: $grey-600 !important;
 }
 .side-form button{
   box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
@@ -77,6 +79,12 @@ form .input-field{
     margin-left: 4rem;
     text-decoration: underline;
   }
+}
+.select-wrapper input.select-dropdown {
+  display: inline-block !important;
+}
+.select-wrapper+label {
+  font-size: 1.6rem !important;
 }
 
 // Section Sub Pages

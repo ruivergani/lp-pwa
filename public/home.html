@@ -32,6 +32,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body class="grey lighten-4">
@@ -128,14 +129,29 @@
       <form class="add-recipe container section">
         <h6>New Recipe</h6>
         <div class="divider"></div>
+        <!-- Text input field -->
         <div class="input-field">
           <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
           <label for="title">Recipe Title</label>
         </div>
+        <!-- Text input field -->
         <div class="input-field">
           <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
           <label for="ingredients">Ingredients</label>
         </div>
+        <!-- Select field -->
+        <div class="input-field">
+          <select>
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">10 minutes</option>
+            <option value="2">15 minutes</option>
+            <option value="3">20 minutes</option>
+            <option value="2">30 minutes</option>
+            <option value="3">45+ minutes</option>
+          </select>
+          <label>Average Cooking Time</label>
+        </div>
+        <!-- Button component -->
         <div class="input-field center">
           <button class="btn-small">Add</button>
         </div>

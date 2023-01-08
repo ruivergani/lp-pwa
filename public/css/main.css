@@ -146,11 +146,13 @@ input {
   -webkit-box-shadow: none !important;
   margin-top: 2rem !important;
   font-size: 1.6rem !important;
+  color: #33303E !important;
 }
 
 label {
   font-size: 2rem !important;
   margin-bottom: 1rem !important;
+  color: #33303E !important;
 }
 
 .side-form button {
@@ -184,6 +186,14 @@ form .input-field {
 .login-form .register-link {
   margin-left: 4rem;
   text-decoration: underline;
+}
+
+.select-wrapper input.select-dropdown {
+  display: inline-block !important;
+}
+
+.select-wrapper + label {
+  font-size: 1.6rem !important;
 }
 
 .s-subpage {

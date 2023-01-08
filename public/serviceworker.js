@@ -40,6 +40,18 @@ const CACHE_URLS = [
 //set up cache and files to add to it
 //...
 
+// Cache size limit function
+const limitCacheSize = (name, size) => {
+  caches.open(name).then(cache => {
+    cache.keys().then(keys => {
+      if(keys.length > size){
+        // call function until not true
+        cache.delete(keys[0]).then(limitCacheSize(name, size));
+      }
+    })
+  })
+};
+
 //add all URLs to cache when installed
 self.addEventListener("install", function (event) {
   console.log("Service worker installed");

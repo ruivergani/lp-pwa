@@ -89,6 +89,23 @@
       }
     </script>
     <script src="../serviceworker.js"></script>
+    <!-- Database Firebase -->
+    <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
+    <script>
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAKAOP6GFQPo-BMxZ8NGnhFJah5Vwt_GGs",
+        authDomain: "lp-pwa.firebaseapp.com",
+        projectId: "lp-pwa",
+        storageBucket: "lp-pwa.appspot.com",
+        messagingSenderId: "794429611236",
+        appId: "1:794429611236:web:d6ed06cf676beddeee60f1",
+        measurementId: "G-HJ1RGR41GH"
+      };
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
     <!-- JavaScript Links -->
     <script src="../js/plugins.js"></script>
     <script src="../js/all.js"></script>

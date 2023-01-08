@@ -21,3 +21,7 @@
     // Collapsible Feature
     $('.collapsible').collapsible();
   });
+
+
+  // Database Configuration
+  db.collection('recipes')

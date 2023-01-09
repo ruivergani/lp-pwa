@@ -3,14 +3,14 @@ const staticCacheName = 'site-static-v7';
 const dynamicCacheName = 'site-dynamic-v7';
 const assets = [
   "/",
-  "index.html",
-  "home.html",
-  "register.html",
-  "pages/about.html",
-  "pages/contact.html",
-  "pages/extra.html",
-  "pages/faqs.html",
-  "pages/fallback.html",
+  "/index.html",
+  "/home.html",
+  "/register.html",
+  "/about.html",
+  "/contact.html",
+  "/extra.html",
+  "/faqs.html",
+  "/fallback.html",
   "manifest.json",
   "css/main.css",
   "css/plugins.css",
@@ -122,7 +122,7 @@ self.addEventListener('fetch', evt => {
         });
       }).catch(() => {
         if(evt.request.url.indexOf('.html') > -1){
-          return caches.match('/pages/fallback.html');
+          return caches.match('/fallback.html');
         }
       })
     );

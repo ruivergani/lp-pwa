@@ -18,7 +18,7 @@
   <!-- CSS Links -->
   <link rel="stylesheet" href="./css/plugins.css">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Register | Recipe App</title>
+  <title>About Us | Recipe App</title>
   <!-- Manifest JSON -->
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#009688" media="(prefers-color-scheme: light)">
@@ -36,7 +36,6 @@
 </head>
 
 <body class="grey lighten-4">
-    
     <!-- Navigation Top -->
     <header>
         <nav class="z-depth-0 teal lighten-1">
@@ -65,46 +64,50 @@
     <!-- Page Content -->
     <section class="s-subpage container">
         <div class="title">
-            <h5 class="center">Register</h5>
+            <h5 class="center">About Us</h5>
             <div class="divider"></div>
         </div>
+        <h6>Who We Are</h6>
+        <p>The Recipe App is a trusted resource for home cooks with more than 3,000 tested recipes, guides, and meal plans, drawing over 15 million readers each month from around the world. We’re supported by a group of recipe developers, food writers, recipe and product testers, photographers, and other creative professionals.</p>
+        <h6>Recipe Development & Testing</h6>
+        <p>Our recipes primarily use fresh, unprocessed ingredients but we also believe there is a time and a place for canned, frozen, and other prepared ingredients. We believe in a diet that includes a wide variety of foods: real butter and cream, extra virgin olive oil, eggs, lots of fruits and vegetables, and protein from meat, fish, beans, and cheese. Plus cake for dessert.</p>
     </section>
-  <!-- Database Firebase -->
-  <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
-  <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
-  <script>
+
+    <!-- Database Firebase -->
+    <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
+    <script>
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
-      apiKey: "AIzaSyAKAOP6GFQPo-BMxZ8NGnhFJah5Vwt_GGs",
-      authDomain: "lp-pwa.firebaseapp.com",
-      projectId: "lp-pwa",
-      storageBucket: "lp-pwa.appspot.com",
-      messagingSenderId: "794429611236",
-      appId: "1:794429611236:web:d6ed06cf676beddeee60f1",
-      measurementId: "G-HJ1RGR41GH"
+        apiKey: "AIzaSyAKAOP6GFQPo-BMxZ8NGnhFJah5Vwt_GGs",
+        authDomain: "lp-pwa.firebaseapp.com",
+        projectId: "lp-pwa",
+        storageBucket: "lp-pwa.appspot.com",
+        messagingSenderId: "794429611236",
+        appId: "1:794429611236:web:d6ed06cf676beddeee60f1",
+        measurementId: "G-HJ1RGR41GH"
     };
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
-  </script>
-  <!-- Service Worker -->
-  <script>
+    </script>
+    <!-- Service Worker -->
+    <script>
     //check whether browser support service workers
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
         navigator.serviceWorker.register('serviceworker.js').then(
-       function(registration) {
-       console.log('Service worker registration successful',registration);
-       }, 
-      function(err) {
-       console.log('Service worker registration failed', err);
+        function(registration) {
+        console.log('Service worker registration successful',registration);
+        }, 
+        function(err) {
+        console.log('Service worker registration failed', err);
             });
         });
     }
-  </script>
-  <script src="./serviceworker.js"></script>
-  <!-- JavaScript Links -->
-  <script src="js/plugins.js"></script>
-  <script src="js/all.js"></script>
+    </script>
+    <script src="./serviceworker.js"></script>
+    <!-- JavaScript Links -->
+    <script src="js/plugins.js"></script>
+    <script src="js/all.js"></script>
 </body>
 </html>
-

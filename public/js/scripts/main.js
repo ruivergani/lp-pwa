@@ -65,7 +65,7 @@ const renderRecipe = (data, id) => {
         <!-- Use suitable and optimised media of the correct format -->
         <picture>
           <!-- Min Width: 200px-->
-          <source srcset="./img/dish.webp" media="(min-width: 200px)" type="image/webp">
+          <source srcset="./img/dish.svg" media="(min-width: 200px)" type="image/webp">
           <!-- Fallback image -->
           <img src="./img/fallback_dish.png" alt="Noodles dish" title="Noodles dish" loading="lazy">
         </picture>

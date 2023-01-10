@@ -10569,4 +10569,105 @@ form .input-field {
   }
 }
 
+/* line 233, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-welcome {
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 240, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-welcome .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+/* line 246, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-welcome .container h1 {
+  width: 100%;
+  max-width: 30rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  color: #000000;
+}
+
+/* line 255, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-welcome .container .bottom-text {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  flex-direction: column;
+}
+
+/* line 260, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-welcome .container .bottom-text .buttons-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* line 266, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-welcome .container .bottom-text .buttons-welcome .btn-login, .s-welcome .container .bottom-text .buttons-welcome .btn-signup {
+  border-radius: 0.4rem;
+  width: 29.5rem;
+  padding: 1.5rem 0px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 125%;
+  /* or 21px */
+  text-align: center;
+}
+
+/* line 278, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-welcome .container .bottom-text .buttons-welcome .btn-login {
+  background-color: #009688;
+  color: #FFFFFF;
+}
+
+/* line 282, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-welcome .container .bottom-text .buttons-welcome .btn-signup {
+  color: #333333;
+  background-color: #EBEBF2;
+}
+
+/* line 287, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-welcome .container .bottom-text .about-us-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 125%;
+  color: #009688;
+}
+
+@media (min-width: 768px) {
+  /* line 299, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  .s-welcome .container {
+    flex-direction: row;
+  }
+  /* line 301, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  .s-welcome .container .bottom-text {
+    gap: 2rem;
+  }
+  /* line 303, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  .s-welcome .container .bottom-text .buttons-welcome {
+    gap: 1rem;
+  }
+  /* line 306, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  .s-welcome .container .bottom-text .about-us-link {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

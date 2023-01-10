@@ -1,6 +1,63 @@
 // Section Menu
 .sidenav{
   padding-top: 1.5rem;
+  li{
+    a{
+      font-size: 1.6rem;
+    }
+    .subheader{
+      font-size: 1.6rem;
+    }
+  }
+}
+// Section New Recipe Form
+.side-form{
+  button{
+    box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
+  }
+  // Form SideBar
+  .add-recipe{
+    h6{
+      font-size: 2rem;
+    }
+    .text-content{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 2rem;
+      .input-field{
+        margin-top: 1.5rem;
+        .formated-text{
+          font-size: 1.6rem;
+        }
+        label{
+          font-size: 2rem;
+          color: $grey-600;
+        }
+        input{
+          margin-top: 1.5rem;
+        }
+      }
+      .radio-buttons{
+        label{
+          font-size: 1.6rem;
+          color: $grey-600;
+        }
+        p{
+          margin-top: 1rem;
+          label{
+            span{
+              font-size: 1.6rem;
+              color: $grey-600;
+            }
+          }
+        }
+      }
+    }
+    .select-wrapper input.select-dropdown {
+      display: inline-block !important;
+    }
+  }
 }
 
 // Section Recipes Card
@@ -51,21 +108,6 @@
   align-items: center;
   justify-content: center;
 }
-
-
-.side-form button{
-  box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
-}
-.add-recipe{
-  h6{
-    font-size: 2rem;
-  }
-}
-.select-wrapper input.select-dropdown {
-  display: inline-block !important;
-}
-
-
 // Section Sub Pages
 .s-subpage{
   padding-top: 2rem;
@@ -91,7 +133,6 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
 // Page FAQs
 .collapsible{
   li{
@@ -109,7 +150,6 @@
     }
   }
 }
-
 // Preloader configuration
 #preloader{
   top: 0px;
@@ -124,7 +164,6 @@
   z-index: 2022;
   transition: all .3s ease-in-out;
 }
-
 // Page Splash Screen
 .s-splash{
   background-color: $brand-teal;
@@ -192,7 +231,6 @@
     }
   }
 } 
-
 // Page Onboarding Screen
 .s-welcome{
   width: 100%;
@@ -273,7 +311,6 @@
     }
   }
 }
-
 // Page Login
 .s-login{
   padding-top: 5rem;

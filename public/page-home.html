@@ -75,23 +75,24 @@
   </section>
   
   <!-- Add Recipe Side Navigation Form-->
-  <div id="side-form" class="sidenav side-form">
-      <!-- Form Requirements -->
-      <form class="add-recipe container">
-        <h6>New Recipe</h6>
-        <div class="divider"></div>
+  <section id="side-form" class="sidenav side-form">
+    <!-- Form Requirements -->
+    <form class="add-recipe container">
+      <h6>New Recipe</h6>
+      <div class="divider"></div>
+      <div class="text-content row">
         <!-- Text input field -->
-        <div class="input-field">
+        <div class="input-field col s12">
           <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
           <label for="title" class="text-field">Recipe Title</label>
         </div>
         <!-- Text input field -->
-        <div class="input-field">
+        <div class="input-field col s12">
           <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
           <label for="ingredients" class="text-field">Ingredients</label>
         </div>
         <!-- Select field -->
-        <div class="input-field">
+        <div class="input-field col s12">
           <select id="option">
             <option value="" disabled selected>Choose your option</option>
             <option value="10">10 minutes</option>
@@ -100,14 +101,14 @@
             <option value="30">30 minutes</option>
             <option value="45">45+ minutes</option>
           </select>
-          <label>Average Cooking Time</label>
+          <label class="formated-text">Average Cooking Time</label>
         </div>
         <!-- Radio Buttons Type -->
-        <div class="radio-buttons">
-          <label>Recommended Cooking Option</label>
+        <div class="radio-buttons col s12">
+          <label class="formated-text">Recommended Cooking Option</label>
           <p>
             <label>
-              <input name="group1" type="radio" checked />
+              <input name="group1" type="radio" checked/>
               <span>Microwave</span>
             </label>
           </p>
@@ -122,8 +123,9 @@
         <div class="input-field center">
           <button class="btn-small">Add</button>
         </div>
-      </form>
-  </div>
+      </div>
+    </form>
+  </section>
   
   <!-- Database Firebase -->
   <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>

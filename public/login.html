@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="./css/lib/aos.css">
   <!-- MAIN CSS -->
   <link type="text/css" rel="stylesheet" href="./css/main.css">
-  <title>Splash Screen | Recipe App</title>
+  <title>Login | Recipe App</title>
   <!-- Manifest JSON -->
   <link rel="manifest" href="./manifest.json">
   <meta name="theme-color" content="#009688" media="(prefers-color-scheme: light)">
@@ -52,13 +52,33 @@
     </div>
   </div>
 
-  <section class="s-splash">
-    <div class="container">
-      
-    </div>
-    <h1>Help you find the best recipe</h1>
-  </section>
-  
+  <!-- Navigation Top -->
+  <header>
+    <nav class="z-depth-0 teal lighten-1">
+      <div class="nav-wrapper container">
+        <a href="/">Recipe<span> App</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Login Form -->
+  <div class="container">
+    <form action="" class="col s12 login-form">
+        <div class="row center-align">
+            <div class="input-field col s12">
+                <input type="text" placeholder="Type your e-mail" id="email" class="validate">
+                <label for="email" class="text-field">E-mail</label>
+            </div>
+            <div class="input-field col s12">
+                <input type="password" placeholder="Type your password" id="password" class="validate">
+                <label for="password" class="text-field">Password</label>
+            </div>
+            <a href="./home.html" class="waves-effect waves-light btn">LOGIN<i class="material-icons right">login</i></a>
+            <!-- Link to a register screen -->
+            <a href="./register.html" class="register-link">Register</a>
+        </div>
+    </form>
+  </div>
 
   <!-- Database Firebase -->
   <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>

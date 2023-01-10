@@ -1,15 +1,5 @@
 @charset "UTF-8";
 
-// Pages Structure
-@import 'pages/variables';
-@import 'pages/fonts';
-@import 'pages/reset';
-@import 'pages/container';
-@import 'pages/titles';
-@import 'pages/header';
-@import 'pages/footer';
-@import 'pages/home';
-
 // Color
 @import "components/color-variables";
 @import "components/color-classes";
@@ -49,3 +39,14 @@
 @import "components/pulse";
 @import "components/datepicker";
 @import "components/timepicker";
+
+
+// Pages Structure
+@import 'pages/variables';
+@import 'pages/fonts';
+@import 'pages/reset';
+@import 'pages/container';
+@import 'pages/titles';
+@import 'pages/header';
+@import 'pages/footer';
+@import 'pages/home';

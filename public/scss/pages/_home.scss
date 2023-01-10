@@ -163,3 +163,69 @@ form .input-field{
 
 
 // Page Splash Screen
+.s-splash{
+  background-color: $brand-teal;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .top{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      span{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+        max-width: 10.4rem;
+      }
+      img{
+        width: 100%;
+        max-width: 12.6rem;
+      }
+    }
+    h1{
+      width: 100%;
+      max-width: 26.7rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 125%;
+      color: #FFFFFF;
+    }
+    .arrow-right{
+      padding-top: 10rem;
+      padding-right: 2rem;
+      align-self: flex-end;
+      i{
+        font-size: 60px;
+        color: white;
+      }
+    }
+  }
+  // Responsive
+  @media (min-width: 768px){
+    .container{
+      flex-direction: row;
+      gap: 4rem;
+      .top{
+        flex-direction: column;
+        span{
+          text-align: center;
+        }
+      }
+      .arrow-right{
+        align-self: auto;
+        padding: 0px;
+      }
+    }
+  }
+} 

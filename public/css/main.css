@@ -1,350 +1,3 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Light.woff") format("woff");
-  font-weight: lighter;
-  font-style: normal;
-  font-display: fallback;
-}
-
-/* line 1, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_reset.scss */
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  border: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
-}
-
-/* line 11, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_reset.scss */
-html,
-body {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-/* line 16, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_reset.scss */
-img {
-  max-width: 100%;
-}
-
-/* line 1, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
-h1, h2, h3, h4 {
-  font-family: 'Roboto', sans-serif;
-}
-
-/* line 4, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
-h1, h2 {
-  line-height: 112%;
-  letter-spacing: -1px;
-}
-
-/* line 8, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
-h3, h4 {
-  letter-spacing: -0.5px;
-  font-weight: 500;
-}
-
-/* line 13, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
-h1 {
-  /* D. Heading/Title-64 */
-  font-weight: 600;
-  font-size: 6.4rem;
-}
-
-/* line 18, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
-h2 {
-  /* D. Heading/Title-40 */
-  font-weight: 700;
-  font-size: 4rem;
-}
-
-/* line 23, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
-h3 {
-  /* D. Heading/Title-24 */
-  font-size: 2.4rem;
-  line-height: 150%;
-}
-
-/* line 28, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
-h4 {
-  /* D. Heading/Title-20 */
-  font-size: 2rem;
-  line-height: 112%;
-}
-
-/* line 33, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
-p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 150%;
-}
-
-/* line 3, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_header.scss */
-header nav {
-  border-bottom: 2px solid #00695c;
-}
-
-/* line 4, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_header.scss */
-header nav a {
-  text-transform: uppercase;
-}
-
-/* line 6, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_header.scss */
-header nav a span {
-  font-weight: bold;
-}
-
-/* line 10, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_header.scss */
-header nav .sidenav-trigger {
-  margin: 0rem;
-}
-
-/* line 20, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_header.scss */
-.sidenav li a i {
-  margin: 0 15px 0 0 !important;
-}
-
-/* line 2, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-recipes {
-  padding-top: 2rem;
-}
-
-/* line 4, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-recipes .card-panel {
-  margin-top: 1rem;
-}
-
-/* line 6, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-recipes .card-panel.recipe {
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0px 1px 3px rgba(90, 90, 90, 0.1);
-  display: grid;
-  grid-template-columns: 2fr 6fr 1fr;
-  grid-template-areas: "image details delete";
-  position: relative;
-}
-
-/* line 14, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-recipes .card-panel.recipe img {
-  grid-area: image;
-  max-width: 7rem;
-}
-
-/* line 19, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-recipes .card-panel .recipe-details {
-  grid-area: details;
-  margin-top: 0.3rem;
-  margin-left: 1rem;
-}
-
-/* line 23, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-recipes .card-panel .recipe-details .recipe-title {
-  font-weight: bold;
-}
-
-/* line 26, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-recipes .card-panel .recipe-details .recipe-ingredients {
-  font-size: 1.6rem;
-}
-
-/* line 30, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-recipes .card-panel .recipe-delete {
-  grid-area: delete;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-
-/* line 35, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-recipes .card-panel .recipe-delete i {
-  font-size: 2.6rem;
-}
-
-/* line 42, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-button {
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* line 50, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-input {
-  box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  margin-top: 2rem !important;
-  font-size: 1.6rem !important;
-  color: #33303E !important;
-}
-
-/* line 57, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-label {
-  font-size: 1.6rem !important;
-  margin-bottom: 1rem !important;
-  color: #33303E !important;
-}
-
-/* line 62, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-label.text-field {
-  font-size: 2rem !important;
-}
-
-/* line 65, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.side-form button {
-  box-shadow: 1px 1px 3px rgba(90, 90, 90, 0.2);
-}
-
-/* line 69, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.add-recipe h6 {
-  font-size: 2rem;
-}
-
-/* line 73, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-form .input-field {
-  margin-top: 30px;
-}
-
-/* line 76, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.login-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-/* line 81, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.login-form .register-link {
-  margin-left: 4rem;
-  text-decoration: underline;
-}
-
-/* line 87, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.select-wrapper input.select-dropdown {
-  display: inline-block !important;
-}
-
-/* line 90, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.radio-buttons {
-  margin-top: 2rem;
-}
-
-/* line 92, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.radio-buttons p {
-  margin-top: 1rem;
-}
-
-/* line 95, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.radio-buttons p label span {
-  font-size: 1.6rem !important;
-}
-
-/* line 101, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.sidenav {
-  padding-top: 3rem;
-}
-
-/* line 106, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-subpage {
-  padding-top: 2rem;
-}
-
-/* line 108, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-subpage .title {
-  padding-bottom: 2rem;
-}
-
-/* line 110, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-subpage .title h5 {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-
-/* line 115, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-subpage h6 {
-  font-size: 2rem;
-  padding-bottom: 1rem;
-  font-weight: 600;
-}
-
-/* line 120, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.s-subpage p, .s-subpage ul li {
-  color: #5F5C6B;
-  font-size: 1.6rem;
-  padding-bottom: 1rem;
-}
-
-/* line 126, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.m-2 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* line 133, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.collapsible li {
-  padding-bottom: 0px !important;
-}
-
-/* line 136, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.collapsible .collapsible-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* line 140, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.collapsible .collapsible-header i {
-  font-weight: 600;
-}
-
-/* line 143, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-.collapsible .collapsible-header p {
-  padding-bottom: 0px;
-}
-
-/* line 150, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
-#preloader {
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  z-index: 2022;
-  transition: all .3s ease-in-out;
-}
-
 /* line 6, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/components/_color-classes.scss */
 .materialize-red {
   background-color: #e51c23 !important;
@@ -10480,6 +10133,439 @@ input[type=range]::-ms-thumb {
     bottom: auto;
     text-align: center;
     margin-top: 1.2rem;
+  }
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Light.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+  font-display: fallback;
+}
+
+/* line 1, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+/* line 11, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_reset.scss */
+html,
+body {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* line 16, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_reset.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 1, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 4, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
+h1, h2 {
+  line-height: 112%;
+  letter-spacing: -1px;
+}
+
+/* line 8, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
+h3, h4 {
+  letter-spacing: -0.5px;
+  font-weight: 500;
+}
+
+/* line 13, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
+h1 {
+  /* D. Heading/Title-64 */
+  font-weight: 600;
+  font-size: 6.4rem;
+}
+
+/* line 18, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
+h2 {
+  /* D. Heading/Title-40 */
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+/* line 23, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
+h3 {
+  /* D. Heading/Title-24 */
+  font-size: 2.4rem;
+  line-height: 150%;
+}
+
+/* line 28, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
+h4 {
+  /* D. Heading/Title-20 */
+  font-size: 2rem;
+  line-height: 112%;
+}
+
+/* line 33, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_titles.scss */
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+}
+
+/* line 3, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_header.scss */
+header nav {
+  border-bottom: 2px solid #00695c;
+}
+
+/* line 4, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_header.scss */
+header nav a {
+  text-transform: uppercase;
+}
+
+/* line 6, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_header.scss */
+header nav a span {
+  font-weight: bold;
+}
+
+/* line 10, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_header.scss */
+header nav .sidenav-trigger {
+  margin: 0rem;
+}
+
+/* line 20, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_header.scss */
+.sidenav li a i {
+  margin: 0 15px 0 0 !important;
+}
+
+/* line 2, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-recipes {
+  padding-top: 2rem;
+}
+
+/* line 4, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-recipes .card-panel {
+  margin-top: 1rem;
+}
+
+/* line 6, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-recipes .card-panel.recipe {
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 1px 3px rgba(90, 90, 90, 0.1);
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr;
+  grid-template-areas: "image details delete";
+  position: relative;
+}
+
+/* line 14, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-recipes .card-panel.recipe img {
+  grid-area: image;
+  max-width: 7rem;
+}
+
+/* line 19, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-recipes .card-panel .recipe-details {
+  grid-area: details;
+  margin-top: 0.3rem;
+  margin-left: 1rem;
+}
+
+/* line 23, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-recipes .card-panel .recipe-details .recipe-title {
+  font-weight: bold;
+}
+
+/* line 26, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-recipes .card-panel .recipe-details .recipe-ingredients {
+  font-size: 1.6rem;
+}
+
+/* line 30, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-recipes .card-panel .recipe-delete {
+  grid-area: delete;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* line 35, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-recipes .card-panel .recipe-delete i {
+  font-size: 2.6rem;
+}
+
+/* line 42, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-button {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 50, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+input {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  margin-top: 2rem !important;
+  font-size: 1.6rem !important;
+  color: #33303E !important;
+}
+
+/* line 57, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+label {
+  font-size: 1.6rem !important;
+  margin-bottom: 1rem !important;
+  color: #33303E !important;
+}
+
+/* line 62, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+label.text-field {
+  font-size: 2rem !important;
+}
+
+/* line 65, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.side-form button {
+  box-shadow: 1px 1px 3px rgba(90, 90, 90, 0.2);
+}
+
+/* line 69, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.add-recipe h6 {
+  font-size: 2rem;
+}
+
+/* line 73, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+form .input-field {
+  margin-top: 30px;
+}
+
+/* line 76, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* line 81, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.login-form .register-link {
+  margin-left: 4rem;
+  text-decoration: underline;
+}
+
+/* line 87, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.select-wrapper input.select-dropdown {
+  display: inline-block !important;
+}
+
+/* line 90, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.radio-buttons {
+  margin-top: 2rem;
+}
+
+/* line 92, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.radio-buttons p {
+  margin-top: 1rem;
+}
+
+/* line 95, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.radio-buttons p label span {
+  font-size: 1.6rem !important;
+}
+
+/* line 101, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.sidenav {
+  padding-top: 3rem;
+}
+
+/* line 106, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-subpage {
+  padding-top: 2rem;
+}
+
+/* line 108, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-subpage .title {
+  padding-bottom: 2rem;
+}
+
+/* line 110, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-subpage .title h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* line 115, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-subpage h6 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* line 120, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-subpage p, .s-subpage ul li {
+  color: #5F5C6B;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+
+/* line 126, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.m-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* line 133, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.collapsible li {
+  padding-bottom: 0px !important;
+}
+
+/* line 136, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.collapsible .collapsible-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 140, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.collapsible .collapsible-header i {
+  font-weight: 600;
+}
+
+/* line 143, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.collapsible .collapsible-header p {
+  padding-bottom: 0px;
+}
+
+/* line 150, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+#preloader {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 2022;
+  transition: all .3s ease-in-out;
+}
+
+/* line 166, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-splash {
+  background-color: #009688;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 173, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-splash .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* line 178, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-splash .container .top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* line 182, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-splash .container .top span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  max-width: 10.4rem;
+}
+
+/* line 190, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-splash .container .top img {
+  width: 100%;
+  max-width: 12.6rem;
+}
+
+/* line 195, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-splash .container h1 {
+  width: 100%;
+  max-width: 26.7rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  color: #FFFFFF;
+}
+
+/* line 204, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-splash .container .arrow-right {
+  padding-top: 10rem;
+  padding-right: 2rem;
+  align-self: flex-end;
+}
+
+/* line 208, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-splash .container .arrow-right i {
+  font-size: 60px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  /* line 216, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  .s-splash .container {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  /* line 219, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  .s-splash .container .top {
+    flex-direction: column;
+  }
+  /* line 221, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  .s-splash .container .top span {
+    text-align: center;
+  }
+  /* line 225, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  .s-splash .container .arrow-right {
+    align-self: auto;
+    padding: 0px;
   }
 }
 

@@ -47,21 +47,21 @@
 }
 
 // Section Forms
-input{
-  box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  margin-top: 2rem !important;
-  font-size: 1.6rem !important;
-  color: $grey-600 !important;
-}
-label{
-  font-size: 1.6rem !important;
-  margin-bottom: 1rem !important;
-  color: $grey-600 !important;
-}
-label.text-field{
-  font-size: 2rem !important;
-}
+// input{
+//   box-shadow: none !important;
+//   -webkit-box-shadow: none !important;
+//   margin-top: 2rem !important;
+//   font-size: 1.6rem !important;
+//   color: $grey-600 !important;
+// }
+// label{
+//   font-size: 1.6rem !important;
+//   margin-bottom: 1rem !important;
+//   color: $grey-600 !important;
+// }
+// label.text-field{
+//   font-size: 2rem !important;
+// }
 .side-form button{
   box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
 }
@@ -70,20 +70,6 @@ label.text-field{
     font-size: 2rem;
   }
 }
-form .input-field{
-  margin-top: 30px;
-}
-.login-form{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  .register-link{
-    margin-left: 4rem;
-    text-decoration: underline;
-  }
-}
-
 .select-wrapper input.select-dropdown {
   display: inline-block !important;
 }
@@ -307,5 +293,100 @@ form .input-field{
         }
       }
     }
+  }
+}
+
+// Page Login
+.s-login{
+  padding-top: 5rem;
+  width: 100%;
+  .container{
+    .top-text{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      .arrows-left{
+        i{
+          transform: rotate(180deg);
+          margin: 0px;
+          float: left !important;
+          color: $brand-teal;
+        }
+      }
+      h1{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 2.6rem;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        justify-self: center !important;
+        margin: 0 auto;
+      }
+    }
+    .login-form{
+      padding-top: 6rem;
+      .fields{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        .inputs{
+          .input-field{
+            label{
+              font-family: 'Roboto', sans-serif;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 18px;
+              color: #000000 !important;
+            }
+            input{
+              margin-top: 1rem;
+            }
+          }
+        }
+        .links{
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 3rem;
+          .about-us-link{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: $brand-teal;
+          }
+          .btn-login{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 125%;
+            text-align: center;
+            /* brand-color/teal */
+            color: #009688;
+            opacity: 0.5;
+            width: 31rem;
+            padding: 1.5rem 0px;
+            background-color: rgba(0, 150, 135, 0.1);
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+  // Responsive
+  @media (min-width: 768px){
+    .container{
+      .login-form{
+        .fields{
+          .links{
+            align-items: center !important;
+          }
+        }
+      }
+    }
+    
   }
 }

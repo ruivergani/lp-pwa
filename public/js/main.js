@@ -67,20 +67,22 @@ const renderRecipe = (data, id) => {
   // Create template HTML with data
   const html = `
       <!-- Card Panel for each item -->
-      <div class="card-panel recipe white row" data-id="${id}">
-        <!-- Use suitable and optimised media of the correct format -->
-        <picture>
-          <!-- Min Width: 200px-->
-          <source srcset="./img/dish.webp" media="(min-width: 200px)" type="image/webp">
-          <!-- Fallback image -->
-          <img src="./img/dish.png" alt="dish picture" title="dish picture" loading="lazy">
-        </picture>
-        <div class="recipe-details">
-          <div class="recipe-title">${data.title}</div>
-          <div class="recipe-ingredients">${data.ingredients}</div>
-        </div>
-        <div class="recipe-delete">
-          <i class="material-icons" data-id="${id}">delete_outline</i>
+      <div class="cards-recipes">
+        <div class="card-panel recipe white" data-id="${id}">
+          <!-- Use suitable and optimised media of the correct format -->
+          <picture>
+            <!-- Min Width: 200px-->
+            <source srcset="./img/dish.webp" media="(min-width: 200px)" type="image/webp">
+            <!-- Fallback image -->
+            <img src="./img/dish.png" alt="dish picture" title="dish picture" loading="lazy">
+          </picture>
+          <div class="recipe-details">
+            <div class="recipe-title">${data.title}</div>
+            <div class="recipe-ingredients">${data.ingredients}</div>
+          </div>
+          <div class="recipe-delete">
+            <i class="material-icons" data-id="${id}">delete_outline</i>
+          </div>
         </div>
       </div>
   `;

@@ -36,41 +36,36 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
-<body class="grey lighten-4">
-  <!-- Preloader as example of another component -->
-  <div id="preloader">
-    <div class="preloader-wrapper small active">
-      <div class="spinner-layer spinner-green-only">
-        <div class="circle-clipper left">
-          <div class="circle"></div>
-        </div><div class="gap-patch">
-          <div class="circle"></div>
-        </div><div class="circle-clipper right">
-          <div class="circle"></div>
-        </div>
+<body>
+  
+  <!-- Section Login -->
+  <section class="s-login">
+    <div class="container">
+      <div class="top-text">
+        <a href="./onboarding.html" class="arrow-right">
+          <i class="material-icons right">arrow_forward</i>
+        </a>
+        <h1>Login</h1>
       </div>
+      <form action="" class="col s12 login-form">
+          <div class="row center-align">
+              <div class="input-field col s12">
+                  <input type="text" placeholder="Type your e-mail" id="email" class="validate">
+                  <label for="email" class="text-field">Username or e-mail</label>
+              </div>
+              <div class="input-field col s12">
+                  <input type="password" placeholder="Type your password" id="password" class="validate">
+                  <label for="password" class="text-field">Password</label>
+              </div>
+              <a href="./page-about.html" class="about-us-link">Problems Logging in</a>
+              <a href="./page-home.html" role="button" class="btn-login">
+                Log In
+              </a>
+          </div>
+      </form>
     </div>
-  </div>
-
-  <!-- Login Form -->
-  <div class="container">
-    <form action="" class="col s12 login-form">
-        <div class="row center-align">
-            <div class="input-field col s12">
-                <input type="text" placeholder="Type your e-mail" id="email" class="validate">
-                <label for="email" class="text-field">E-mail</label>
-            </div>
-            <div class="input-field col s12">
-                <input type="password" placeholder="Type your password" id="password" class="validate">
-                <label for="password" class="text-field">Password</label>
-            </div>
-            <a href="./home.html" class="waves-effect waves-light btn">LOGIN<i class="material-icons right">login</i></a>
-            <!-- Link to a register screen -->
-            <a href="./register.html" class="register-link">Register</a>
-        </div>
-    </form>
-  </div>
-
+  </section>
+ 
   <!-- Database Firebase -->
   <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
   <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>

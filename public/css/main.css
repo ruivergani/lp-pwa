@@ -10652,19 +10652,19 @@ form .input-field {
 }
 
 @media (min-width: 768px) {
-  /* line 299, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 298, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-welcome .container {
     flex-direction: row;
   }
-  /* line 301, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 300, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-welcome .container .bottom-text {
     gap: 2rem;
   }
-  /* line 303, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 302, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-welcome .container .bottom-text .buttons-welcome {
     gap: 1rem;
   }
-  /* line 306, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 305, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-welcome .container .bottom-text .about-us-link {
     display: none;
   }

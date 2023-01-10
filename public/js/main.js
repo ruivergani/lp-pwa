@@ -24,6 +24,12 @@ $(document).ready(function(){
   $('.collapsible').collapsible();
 });
 
+// AOS Animate 
+AOS.init({
+  duration : 1000, // duration of the animation
+  once: true       // execute only once
+});
+
 
 // Database Configuration
 

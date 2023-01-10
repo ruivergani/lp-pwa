@@ -1,6 +1,6 @@
 //set up cache name and files to add to it
-const staticCacheName = 'site-static-v7';
-const dynamicCacheName = 'site-dynamic-v7';
+const staticCacheName = 'site-static-v1';
+const dynamicCacheName = 'site-dynamic-v1';
 const assets = [
   "/",
   "/index.html",
@@ -16,15 +16,8 @@ const assets = [
   "css/plugins.css",
   "js/all.js",
   "js/plugins.js",
-  //"https://fonts.googleapis.com/icon?family=Material+Icons",
-  //"https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js",
-  //"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap",
-  //"https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2",
   "img/dish.webp",
-  "img/fallback_dish.png",
-  "img/fallback_lasagne.jpg",
-  "img/fallback_pizza.jpg",
-  "img/fallback_rice.jpg",
+  "img/dish.png",
   "img/lasagne.webp",
   "img/pizza.webp",
   "img/rice.webp",

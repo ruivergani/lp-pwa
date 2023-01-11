@@ -10271,32 +10271,44 @@ header nav .sidenav-trigger {
   margin: 0 15px 0 0 !important;
 }
 
-/* line 2, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  66% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* line 14, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .sidenav {
   padding-top: 1.5rem;
 }
 
-/* line 5, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 17, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .sidenav li a {
   font-size: 1.6rem;
 }
 
-/* line 8, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 20, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .sidenav li .subheader {
   font-size: 1.6rem;
 }
 
-/* line 15, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 27, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .side-form button {
   box-shadow: 1px 1px 3px rgba(90, 90, 90, 0.2);
 }
 
-/* line 20, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 32, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .side-form .add-recipe h6 {
   font-size: 2rem;
 }
 
-/* line 23, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 35, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .side-form .add-recipe .text-content {
   display: flex;
   align-items: center;
@@ -10304,50 +10316,50 @@ header nav .sidenav-trigger {
   padding-top: 2rem;
 }
 
-/* line 28, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 40, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .side-form .add-recipe .text-content .input-field {
   margin-top: 1.5rem;
 }
 
-/* line 30, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 42, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .side-form .add-recipe .text-content .input-field .formated-text {
   font-size: 1.6rem;
 }
 
-/* line 33, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 45, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .side-form .add-recipe .text-content .input-field label {
   font-size: 2rem;
   color: #33303E;
 }
 
-/* line 37, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 49, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .side-form .add-recipe .text-content .input-field input {
   margin-top: 1.5rem;
 }
 
-/* line 42, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 54, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .side-form .add-recipe .text-content .radio-buttons label {
   font-size: 1.6rem;
   color: #33303E;
 }
 
-/* line 46, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 58, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .side-form .add-recipe .text-content .radio-buttons p {
   margin-top: 1rem;
 }
 
-/* line 49, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 61, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .side-form .add-recipe .text-content .radio-buttons p label span {
   font-size: 1.6rem;
   color: #33303E;
 }
 
-/* line 57, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 69, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .side-form .add-recipe .select-wrapper input.select-dropdown {
   display: inline-block !important;
 }
 
-/* line 64, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 76, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-recipes {
   padding-top: 2rem;
   display: flex;
@@ -10357,18 +10369,18 @@ header nav .sidenav-trigger {
   flex-direction: column;
 }
 
-/* line 71, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 83, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-recipes .cards-recipes {
   width: 100%;
 }
 
-/* line 73, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 85, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-recipes .cards-recipes .card-panel {
   margin-top: 1rem;
   width: 100%;
 }
 
-/* line 76, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 88, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-recipes .cards-recipes .card-panel.recipe {
   border-radius: 8px;
   padding: 10px;
@@ -10379,31 +10391,31 @@ header nav .sidenav-trigger {
   position: relative;
 }
 
-/* line 84, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 96, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-recipes .cards-recipes .card-panel.recipe img {
   grid-area: image;
   max-width: 7rem;
   padding-top: 2rem;
 }
 
-/* line 90, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 102, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-recipes .cards-recipes .card-panel .recipe-details {
   grid-area: details;
   margin-top: 0.3rem;
   margin-left: 1rem;
 }
 
-/* line 94, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 106, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-recipes .cards-recipes .card-panel .recipe-details .recipe-title {
   font-weight: bold;
 }
 
-/* line 97, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 109, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-recipes .cards-recipes .card-panel .recipe-details .recipe-ingredients {
   font-size: 1.6rem;
 }
 
-/* line 101, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 113, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-recipes .cards-recipes .card-panel .recipe-delete {
   grid-area: delete;
   position: absolute;
@@ -10411,23 +10423,23 @@ header nav .sidenav-trigger {
   right: 0px;
 }
 
-/* line 106, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 118, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-recipes .cards-recipes .card-panel .recipe-delete i {
   font-size: 2.6rem;
 }
 
 @media (min-width: 768px) {
-  /* line 64, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 76, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-recipes {
     flex-direction: row;
   }
-  /* line 117, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 129, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-recipes .card-panel.recipe {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-/* line 124, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 136, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-button {
   margin-top: 3rem;
   display: flex;
@@ -10435,65 +10447,65 @@ header nav .sidenav-trigger {
   justify-content: center;
 }
 
-/* line 131, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 143, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-subpage {
   padding-top: 2rem;
 }
 
-/* line 133, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 145, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-subpage .title {
   padding-bottom: 2rem;
 }
 
-/* line 135, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 147, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-subpage .title h5 {
   font-size: 2.4rem;
   font-weight: 700;
 }
 
-/* line 140, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 152, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-subpage h6 {
   font-size: 2rem;
   padding-bottom: 1rem;
   font-weight: 600;
 }
 
-/* line 145, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 157, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-subpage p, .s-subpage ul li {
   color: #5F5C6B;
   font-size: 1.6rem;
   padding-bottom: 1rem;
 }
 
-/* line 151, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 163, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .m-2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-/* line 157, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 169, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .collapsible li {
   padding-bottom: 0px !important;
 }
 
-/* line 160, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 172, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .collapsible .collapsible-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* line 164, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 176, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .collapsible .collapsible-header i {
   font-weight: 600;
 }
 
-/* line 167, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 179, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .collapsible .collapsible-header p {
   padding-bottom: 0px;
 }
 
-/* line 173, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 185, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 #preloader {
   top: 0px;
   left: 0px;
@@ -10508,7 +10520,7 @@ header nav .sidenav-trigger {
   transition: all .3s ease-in-out;
 }
 
-/* line 187, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 199, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-splash {
   background-color: #009688;
   width: 100%;
@@ -10518,7 +10530,7 @@ header nav .sidenav-trigger {
   justify-content: center;
 }
 
-/* line 194, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 206, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-splash .container {
   display: flex;
   align-items: center;
@@ -10526,14 +10538,14 @@ header nav .sidenav-trigger {
   flex-direction: column;
 }
 
-/* line 199, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 211, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-splash .container .top {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-/* line 203, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 215, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-splash .container .top span {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -10543,13 +10555,14 @@ header nav .sidenav-trigger {
   max-width: 10.4rem;
 }
 
-/* line 211, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 223, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-splash .container .top img {
   width: 100%;
   max-width: 12.6rem;
+  animation: floating 6s infinite;
 }
 
-/* line 216, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 229, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-splash .container h1 {
   width: 100%;
   max-width: 26.7rem;
@@ -10560,41 +10573,41 @@ header nav .sidenav-trigger {
   color: #FFFFFF;
 }
 
-/* line 225, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 238, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-splash .container .arrow-right {
   padding-top: 10rem;
   padding-right: 2rem;
   align-self: flex-end;
 }
 
-/* line 229, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 242, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-splash .container .arrow-right i {
   font-size: 60px;
   color: white;
 }
 
 @media (min-width: 768px) {
-  /* line 237, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 250, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-splash .container {
     flex-direction: row;
     gap: 4rem;
   }
-  /* line 240, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 253, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-splash .container .top {
     flex-direction: column;
   }
-  /* line 242, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 255, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-splash .container .top span {
     text-align: center;
   }
-  /* line 246, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 259, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-splash .container .arrow-right {
     align-self: auto;
     padding: 0px;
   }
 }
 
-/* line 254, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 267, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-welcome {
   width: 100%;
   height: 100vh;
@@ -10604,7 +10617,7 @@ header nav .sidenav-trigger {
   justify-content: center;
 }
 
-/* line 261, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 274, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-welcome .container {
   display: flex;
   align-items: center;
@@ -10613,7 +10626,7 @@ header nav .sidenav-trigger {
   gap: 5rem;
 }
 
-/* line 267, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 280, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-welcome .container h1 {
   width: 100%;
   max-width: 30rem;
@@ -10624,7 +10637,7 @@ header nav .sidenav-trigger {
   color: #000000;
 }
 
-/* line 276, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 289, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-welcome .container .bottom-text {
   display: flex;
   align-items: center;
@@ -10632,7 +10645,7 @@ header nav .sidenav-trigger {
   flex-direction: column;
 }
 
-/* line 281, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 294, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-welcome .container .bottom-text .buttons-welcome {
   display: flex;
   align-items: center;
@@ -10641,7 +10654,7 @@ header nav .sidenav-trigger {
   gap: 2rem;
 }
 
-/* line 287, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 300, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-welcome .container .bottom-text .buttons-welcome .btn-login, .s-welcome .container .bottom-text .buttons-welcome .btn-signup {
   border-radius: 0.4rem;
   width: 29.5rem;
@@ -10655,19 +10668,19 @@ header nav .sidenav-trigger {
   text-align: center;
 }
 
-/* line 299, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 312, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-welcome .container .bottom-text .buttons-welcome .btn-login {
   background-color: #009688;
   color: #FFFFFF;
 }
 
-/* line 303, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 316, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-welcome .container .bottom-text .buttons-welcome .btn-signup {
   color: #333333;
   background-color: #EBEBF2;
 }
 
-/* line 308, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 321, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-welcome .container .bottom-text .about-us-link {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
@@ -10677,31 +10690,31 @@ header nav .sidenav-trigger {
 }
 
 @media (min-width: 768px) {
-  /* line 319, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 332, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-welcome .container {
     flex-direction: row;
   }
-  /* line 321, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 334, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-welcome .container .bottom-text {
     gap: 2rem;
   }
-  /* line 323, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 336, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-welcome .container .bottom-text .buttons-welcome {
     gap: 1rem;
   }
-  /* line 326, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 339, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-welcome .container .bottom-text .about-us-link {
     display: none;
   }
 }
 
-/* line 334, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 347, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-login {
   padding-top: 5rem;
   width: 100%;
 }
 
-/* line 338, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 351, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-login .container .top-text {
   display: flex;
   align-items: center;
@@ -10709,7 +10722,7 @@ header nav .sidenav-trigger {
   flex-direction: row-reverse;
 }
 
-/* line 344, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 357, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-login .container .top-text .arrows-left i {
   transform: rotate(180deg);
   margin: 0px;
@@ -10717,7 +10730,7 @@ header nav .sidenav-trigger {
   color: #009688;
 }
 
-/* line 351, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 364, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-login .container .top-text h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -10729,12 +10742,12 @@ header nav .sidenav-trigger {
   margin: 0 auto;
 }
 
-/* line 362, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 375, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-login .container .login-form {
   padding-top: 6rem;
 }
 
-/* line 364, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 377, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-login .container .login-form .fields {
   display: flex;
   align-items: center;
@@ -10742,7 +10755,7 @@ header nav .sidenav-trigger {
   gap: 1.5rem;
 }
 
-/* line 371, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 384, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-login .container .login-form .fields .inputs .input-field label {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
@@ -10751,12 +10764,12 @@ header nav .sidenav-trigger {
   color: #000000 !important;
 }
 
-/* line 378, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 391, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-login .container .login-form .fields .inputs .input-field input {
   margin-top: 1rem;
 }
 
-/* line 383, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 396, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-login .container .login-form .fields .links {
   display: flex;
   align-items: flex-start;
@@ -10764,7 +10777,7 @@ header nav .sidenav-trigger {
   gap: 3rem;
 }
 
-/* line 388, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 401, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-login .container .login-form .fields .links .about-us-link {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
@@ -10773,7 +10786,7 @@ header nav .sidenav-trigger {
   color: #009688;
 }
 
-/* line 395, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 408, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-login .container .login-form .fields .links .btn-login {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -10790,7 +10803,7 @@ header nav .sidenav-trigger {
 }
 
 @media (min-width: 768px) {
-  /* line 418, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 431, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-login .container .login-form .fields .links {
     align-items: center !important;
   }

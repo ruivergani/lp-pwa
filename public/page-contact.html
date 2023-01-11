@@ -1,51 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Meta ViewPort -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta Description -->
+  <meta name="description" content="Recipe App created by university student to meet assignment criteria of creating a PWA (Android) style app.">
+  <!-- Roboto Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/svg" href="./favicon.svg">
+  <!-- AOS Animate -->
+  <link rel="stylesheet" href="./css/lib/aos.css">
+  <!-- MAIN CSS -->
+  <link type="text/css" rel="stylesheet" href="./css/main.css">
+  <title>Contact | Recipe App</title>
+  <!-- Manifest JSON -->
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#009688" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#4caf50" media="(prefers-color-scheme: dark)">
+  <!-- IOS Support -->
+  <link rel="apple-touch-icon" href="./img/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" href="./img/icons/icon-72x72.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#009688">
+  <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
 
 <body class="grey lighten-4">
-    <!-- Navigation Top -->
-    <header>
-      <nav class="z-depth-0 teal lighten-1">
-        <div class="nav-wrapper container">
-        <a href="/">Recipe<span> App</span></a>
-        <span class="right ">
-            <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+  <!-- Navigation Top -->
+  <header>
+    <nav class="z-depth-0 teal lighten-1">
+      <div class="nav-wrapper container">
+        <a href="./page-home.html">Recipe<span> App</span></a>
+        <span class="right">
+          <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
         </span>
-        </div>
-      </nav>
-    </header>
-    
-    <!-- Side Navigation Menu  -->
-    <ul id="side-menu" class="sidenav side-menu">
-        <li><a class="subheader">Recipe App</a></li>
-        <li><a href="home.html" class="waves-effect">Home</a></li>
-        <li><a href="about.html" class="waves-effect">About</a></li>
-        <li><a href="faqs.html" class="waves-effect">FAQs</a></li>
-        <li><a href="extra.html" class="waves-effect">Extra Information</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="contact.html" class="waves-effect">
-        <i class="material-icons">mail_outline</i>Contact</a>
-        </li>
-    </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Side Navigation Menu  -->
+  <ul id="side-menu" class="sidenav side-menu">
+    <li><a class="subheader">Recipe App</a></li>
+    <li><a href="page-home.html" class="waves-effect">Home</a></li>
+    <li><a href="page-about.html" class="waves-effect">About</a></li>
+    <li><a href="page-faqs.html" class="waves-effect">FAQs</a></li>
+    <li><a href="page-extra.html" class="waves-effect">Extra Information</a></li>
+    <li><a href="page-contact.html" class="waves-effect">Contact</a></li>
+    <div class="divider"></div>
+    <li><a href="index.html" class="waves-effect">LogOut</a></li>
+  </ul>
 
-    <!-- Page Content -->
-    <section class="s-subpage container">
-       <div class="title">
-        <h5 class="center">Contact Us</h5>
-        <div class="divider"></div>
-       </div>
-        <p>Have something you’d like to let us know? Whether you have a comment on a recipe or an idea to share, we would love to hear from you: contact@recipeapp.com.</p>
-        <div class="divider m-2"></div>
-        <h6>Find us at:</h6>
-        <ul>
-          <li>Queen Elizabeth Olympic Park, Here East, London E20 3BS</li>
-          <li>London, UK</li>
-        </ul>
-     </section>
+  <!-- Page Content -->
+  <section class="s-subpage container">
+      <div class="title">
+      <h5 class="center">Contact Us</h5>
+      <div class="divider"></div>
+      </div>
+      <p>Have something you’d like to let us know? Whether you have a comment on a recipe or an idea to share, we would love to hear from you: contact@recipeapp.com.</p>
+      <div class="divider m-2"></div>
+      <h6>Find us at:</h6>
+      <ul>
+        <li>Queen Elizabeth Olympic Park, Here East, London E20 3BS</li>
+        <li>London, UK</li>
+      </ul>
+  </section>
      
-    
-    <!-- Database Firebase -->
+  <!-- Database Firebase -->
   <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
   <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
   <script>
@@ -62,6 +93,7 @@
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
   </script>
+
   <!-- Service Worker -->
   <script>
     //check whether browser support service workers
@@ -78,9 +110,11 @@
     }
   </script>
   <script src="./serviceworker.js"></script>
-  <!-- JavaScript Links -->
-  <script src="js/plugins.js"></script>
-  <script src="js/all.js"></script>
+
+  <!-- JavaScript Scripts -->
+  <script src="./js/lib/aos.min.js"></script>
+  <script src="./js/lib/materialize.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
 

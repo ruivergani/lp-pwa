@@ -437,3 +437,33 @@
     
   }
 }
+// Page Extra Resources
+.s-subpage{
+  .extra-nav{
+    height: 20rem;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: scroll !important;
+    padding: 1rem 0px;
+    ul{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.5rem;
+      li{
+        width: 100%;
+        display: flex;
+        padding-top: 1rem;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid $grey-200;
+        a{
+          p{
+            color: $grey-600;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -10809,4 +10809,37 @@ header nav .sidenav-trigger {
   }
 }
 
+/* line 442, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-subpage .extra-nav {
+  height: 20rem;
+  background-color: white;
+  overflow: hidden;
+  overflow-y: scroll !important;
+  padding: 1rem 0px;
+}
+
+/* line 448, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-subpage .extra-nav ul {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* line 453, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-subpage .extra-nav ul li {
+  width: 100%;
+  display: flex;
+  padding-top: 1rem;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #C6C5CE;
+}
+
+/* line 461, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+.s-subpage .extra-nav ul li a p {
+  color: #33303E;
+  font-size: 1.6rem;
+}
+
 /*# sourceMappingURL=main.css.map */

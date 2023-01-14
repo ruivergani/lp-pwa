@@ -10793,23 +10793,21 @@ header nav .sidenav-trigger {
   font-size: 17px;
   line-height: 125%;
   text-align: center;
-  /* brand-color/teal */
-  color: #009688;
-  opacity: 0.5;
+  color: white;
   width: 31rem;
   padding: 1.5rem 0px;
-  background-color: rgba(0, 150, 135, 0.1);
+  background-color: #009688;
   border-radius: 4px;
 }
 
 @media (min-width: 768px) {
-  /* line 431, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+  /* line 429, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
   .s-login .container .login-form .fields .links {
     align-items: center !important;
   }
 }
 
-/* line 442, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 440, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-subpage .extra-nav {
   height: 20rem;
   background-color: white;
@@ -10818,7 +10816,7 @@ header nav .sidenav-trigger {
   padding: 1rem 0px;
 }
 
-/* line 448, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 446, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-subpage .extra-nav ul {
   display: flex;
   align-items: flex-start;
@@ -10826,7 +10824,7 @@ header nav .sidenav-trigger {
   gap: 0.5rem;
 }
 
-/* line 453, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 451, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-subpage .extra-nav ul li {
   width: 100%;
   display: flex;
@@ -10836,7 +10834,7 @@ header nav .sidenav-trigger {
   border-bottom: 1px solid #C6C5CE;
 }
 
-/* line 461, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+/* line 459, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-subpage .extra-nav ul li a p {
   color: #33303E;
   font-size: 1.6rem;

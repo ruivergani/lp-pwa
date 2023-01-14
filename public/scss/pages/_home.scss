@@ -411,12 +411,10 @@
             font-size: 17px;
             line-height: 125%;
             text-align: center;
-            /* brand-color/teal */
-            color: #009688;
-            opacity: 0.5;
+            color: white;
             width: 31rem;
             padding: 1.5rem 0px;
-            background-color: rgba(0, 150, 135, 0.1);
+            background-color: $brand-teal;
             border-radius: 4px;
           }
         }

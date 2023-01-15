@@ -197,7 +197,7 @@
 }
 // Page Splash Screen
 .s-splash{
-  background-color: $brand-teal;
+  background-color: var(--brand-teal);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -310,7 +310,7 @@
           text-align: center;
         }
         .btn-login{
-          background-color: $brand-teal;
+          background-color: var(--brand-teal);
           color: #FFFFFF;
         }
         .btn-signup{
@@ -323,7 +323,7 @@
         font-weight: 600;
         font-size: 1.8rem;
         line-height: 125%;
-        color: $brand-teal;
+        color: var(--brand-teal);
       }
     }
   }
@@ -358,7 +358,7 @@
           transform: rotate(180deg);
           margin: 0px;
           float: left !important;
-          color: $brand-teal;
+          color: var(--brand-teal);
         }
       }
       h1{
@@ -403,7 +403,7 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 16px;
-            color: $brand-teal;
+            color: var(--brand-teal);
           }
           .btn-login{
             font-family: 'Roboto', sans-serif;
@@ -414,7 +414,7 @@
             color: white;
             width: 31rem;
             padding: 1.5rem 0px;
-            background-color: $brand-teal;
+            background-color: var(--brand-teal);
             border-radius: 4px;
           }
         }

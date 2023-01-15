@@ -1,9 +1,23 @@
-//color
-$brand-teal: #009688;
-$brand-teal-lighten: #26a69a;
-$brand-teal-darken-1: #00897b;
-$brand-teal-darken-2: #00796b;
-$brand-teal-darken-3: #00695c;
+//color light mode
+@media (prefers-color-scheme: light){
+    :root{
+        --brand-teal: #009688;
+        --brand-teal-lighten: #26a69a;
+        --brand-teal-darken-1: #00897b;
+        --brand-teal-darken-2: #00796b;
+        --brand-teal-darken-3: #00695c;
+    }
+}
+// color dark mode
+@media (prefers-color-scheme: dark){
+    :root{
+        --brand-teal: #03a9f4;
+        --brand-teal-lighten: #29b6f6;
+        --brand-teal-darken-1: #0277bd;
+        --brand-teal-darken-2: #01579b;
+        --brand-teal-darken-3: #0288d1;
+    }
+}
 
 // grey-colors
 $grey-600: #33303E;

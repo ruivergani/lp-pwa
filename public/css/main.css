@@ -10136,6 +10136,28 @@ input[type=range]::-ms-thumb {
   }
 }
 
+@media (prefers-color-scheme: light) {
+  /* line 3, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_variables.scss */
+  :root {
+    --brand-teal: #009688;
+    --brand-teal-lighten: #26a69a;
+    --brand-teal-darken-1: #00897b;
+    --brand-teal-darken-2: #00796b;
+    --brand-teal-darken-3: #00695c;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* line 13, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_variables.scss */
+  :root {
+    --brand-teal: #03a9f4;
+    --brand-teal-lighten: #29b6f6;
+    --brand-teal-darken-1: #0277bd;
+    --brand-teal-darken-2: #01579b;
+    --brand-teal-darken-3: #0288d1;
+  }
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto-Regular.woff") format("woff");
@@ -10247,7 +10269,7 @@ p {
 
 /* line 3, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_header.scss */
 header nav {
-  border-bottom: 2px solid #00695c;
+  border-bottom: 2px solid var(--brand-teal-darken-3);
 }
 
 /* line 4, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_header.scss */
@@ -10522,7 +10544,7 @@ header nav .sidenav-trigger {
 
 /* line 199, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-splash {
-  background-color: #009688;
+  background-color: var(--brand-teal);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -10670,7 +10692,7 @@ header nav .sidenav-trigger {
 
 /* line 312, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
 .s-welcome .container .bottom-text .buttons-welcome .btn-login {
-  background-color: #009688;
+  background-color: var(--brand-teal);
   color: #FFFFFF;
 }
 
@@ -10686,7 +10708,7 @@ header nav .sidenav-trigger {
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 125%;
-  color: #009688;
+  color: var(--brand-teal);
 }
 
 @media (min-width: 768px) {
@@ -10727,7 +10749,7 @@ header nav .sidenav-trigger {
   transform: rotate(180deg);
   margin: 0px;
   float: left !important;
-  color: #009688;
+  color: var(--brand-teal);
 }
 
 /* line 364, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
@@ -10783,7 +10805,7 @@ header nav .sidenav-trigger {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  color: #009688;
+  color: var(--brand-teal);
 }
 
 /* line 408, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
@@ -10796,7 +10818,7 @@ header nav .sidenav-trigger {
   color: white;
   width: 31rem;
   padding: 1.5rem 0px;
-  background-color: #009688;
+  background-color: var(--brand-teal);
   border-radius: 4px;
 }
 

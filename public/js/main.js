@@ -1,3 +1,7 @@
+if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
+  console.log('🎉 Dark mode is supported');
+}
+
 const recipes = document.querySelector('.s-recipes');
 
 M.AutoInit();

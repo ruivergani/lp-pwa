@@ -35,7 +35,7 @@ const assets = [
   "img/icons/icon-96x96.png",
 ];
 
-// cache size limit function
+// Function Cache size limit function
 const limitCacheSize = (name, size) => {
   caches.open(name).then(cache => {
     cache.keys().then(keys => {

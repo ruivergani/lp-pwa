@@ -10139,6 +10139,7 @@ input[type=range]::-ms-thumb {
 @media (prefers-color-scheme: light) {
   /* line 3, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_variables.scss */
   :root {
+    --white: #F1F0F5;
     --brand-teal: #009688;
     --brand-teal-lighten: #26a69a;
     --brand-teal-darken-1: #00897b;
@@ -10148,8 +10149,9 @@ input[type=range]::-ms-thumb {
 }
 
 @media (prefers-color-scheme: dark) {
-  /* line 13, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_variables.scss */
+  /* line 14, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_variables.scss */
   :root {
+    --white: #4E4B59;
     --brand-teal: #03a9f4;
     --brand-teal-lighten: #29b6f6;
     --brand-teal-darken-1: #0277bd;
@@ -10207,9 +10209,10 @@ html,
 body {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  background-color: var(--white) !important;
 }
 
-/* line 16, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_reset.scss */
+/* line 17, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_reset.scss */
 img {
   max-width: 100%;
 }

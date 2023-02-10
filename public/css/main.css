@@ -10151,7 +10151,7 @@ input[type=range]::-ms-thumb {
 @media (prefers-color-scheme: dark) {
   /* line 14, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_variables.scss */
   :root {
-    --white: #4E4B59;
+    --white: #C6C5CE;
     --brand-teal: #03a9f4;
     --brand-teal-lighten: #29b6f6;
     --brand-teal-darken-1: #0277bd;

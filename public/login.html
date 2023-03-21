@@ -63,9 +63,7 @@
             <a href="./forgotpassword.html" class="about-us-link">
               Problems Logging in
             </a>
-            <button class="btn-login" id="submit">
-              Log In
-            </button>
+            <button class="btn-login" type="button" id="login" name="login">Log In</button>
           </div>
         </div>
       </form>
@@ -118,7 +116,28 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
+    const auth = getAuth();
+    // Login Code
+    document.getElementById("login").addEventListener("click", function(){
+      var email = document.getElementById("login_email").value;
+      var password = document.getElementById("login_password").value;
 
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in 
+          const user = userCredential.user;
+          // ...
+          console.log(user);
+          alert(user.email+" Login successfully!!");
+          window.location.href = '/public/page-home.html';
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.log(errorMessage);
+          alert(errorMessage);
+        });
+    });
     
   </script>
 </html>

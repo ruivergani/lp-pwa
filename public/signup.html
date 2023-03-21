@@ -46,53 +46,25 @@
           <i class="material-icons">arrow_forward</i>
         </a>
       </div>
-      <form action="" class="col s12 login-form">
-          <div class="fields row center-align">
+      <div class="col s12 login-form">
+          <div class="fields row center-align" id="create-acct">
               <div class="inputs">
                 <div class="input-field col s12 m6 center-align" data-aos="fade-left">
-                  <input type="text" placeholder="Type your username" id="username" class="validate">
-                  <label for="username" class="text-field">Username</label>
-                </div>
-                <div class="input-field col s12 m6 center-align" data-aos="fade-left">
-                  <input type="text" placeholder="Type your e-mail" id="email" class="validate">
+                  <input type="text" placeholder="Type your e-mail" id="email" name="email" class="validate">
                   <label for="email" class="text-field">E-mail</label>
                 </div>
                 <div class="input-field col s12 m6 center-align" data-aos="fade-left">
-                    <input type="password" placeholder="Type your password" id="password" class="validate">
-                    <label for="password" class="text-field">Password</label>
+                  <input type="password" placeholder="Type your password" name="password" id="password" class="validate">
+                  <label for="password" class="text-field">Password</label>
                 </div>
-                <div class="input-field col s12 m6 center-align" data-aos="fade-left">
-                  <input type="password" placeholder="Confirm your password" id="password" class="validate">
-                  <label for="password" class="text-field">Confirm Password</label>
-              </div>
               </div>
               <div class="links" data-aos="fade-left">
-                <a href="./page-home.html" role="button" class="btn-login">
-                  Register
-                </a>
+                <button class="btn-login" type="button" id="register" name="register">Register</button>
               </div>
           </div>
-      </form>
+        </div>
     </div>
   </section>
-
-  <!-- Database Firebase -->
-  <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
-  <script src= "https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
-  <script>
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyAKAOP6GFQPo-BMxZ8NGnhFJah5Vwt_GGs",
-      authDomain: "lp-pwa.firebaseapp.com",
-      projectId: "lp-pwa",
-      storageBucket: "lp-pwa.appspot.com",
-      messagingSenderId: "794429611236",
-      appId: "1:794429611236:web:d6ed06cf676beddeee60f1",
-      measurementId: "G-HJ1RGR41GH"
-    };
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
-  </script>
 
   <!-- Service Worker -->
   <script>
@@ -116,5 +88,54 @@
   <script src="./js/lib/materialize.min.js"></script>
   <script language="JavaScript" type="text/javascript" src="./js/main.js"></script>
 </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAKAOP6GFQPo-BMxZ8NGnhFJah5Vwt_GGs",
+      authDomain: "lp-pwa.firebaseapp.com",
+      databaseURL: "https://lp-pwa-default-rtdb.firebaseio.com",
+      projectId: "lp-pwa",
+      storageBucket: "lp-pwa.appspot.com",
+      messagingSenderId: "794429611236",
+      appId: "1:794429611236:web:d6ed06cf676beddeee60f1",
+      measurementId: "G-HJ1RGR41GH"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    const auth = getAuth();
+    // New Registration Code
+    document.getElementById("register").addEventListener("click", function(){
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      // For New Registration
+      createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        console.log(user);
+        alert("Registration successfully!!");
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+        console.log(errorMessage);
+        alert(error);
+      });
+    });
+    // ----- End
+  </script>
 </html>
 

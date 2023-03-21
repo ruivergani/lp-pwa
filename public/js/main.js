@@ -35,7 +35,8 @@ AOS.init({
 // Database Configuration
 
 // Offline Data
-db.enablePersistence()
+if(db){
+  db.enablePersistence()
   .catch(err => {
     if(err.code == 'failed-precondition'){
       // probably multiple tabs open at once
@@ -47,22 +48,22 @@ db.enablePersistence()
     }
   });
 
-// Realtime listener
-db.collection('recipes').onSnapshot((snapshot) => {
-  console.log(snapshot.docChanges());
-  snapshot.docChanges().forEach(change => {
-    //console.log(change, change.doc.data(), change.doc.id);
-    if(change.type === 'added'){
-      // add document data to the web page
-      renderRecipe(change.doc.data(), change.doc.id);
-    }
-    if(change.type === 'removed'){
-      // remove the document data from web page
-      removeRecipe(change.doc.id); // id of the doc removed
-    }
-  })
-});
-
+  // Realtime listener
+  db.collection('recipes').onSnapshot((snapshot) => {
+    console.log(snapshot.docChanges());
+    snapshot.docChanges().forEach(change => {
+      //console.log(change, change.doc.data(), change.doc.id);
+      if(change.type === 'added'){
+        // add document data to the web page
+        renderRecipe(change.doc.data(), change.doc.id);
+      }
+      if(change.type === 'removed'){
+        // remove the document data from web page
+        removeRecipe(change.doc.id); // id of the doc removed
+      }
+    })
+  });
+}
 
 // Check if the content exists before using eventListeners
 // Render Recipe function
@@ -91,8 +92,6 @@ const renderRecipe = (data, id) => {
   `;
   recipes.innerHTML += html;
 }
-
-
 
 // Add New Recipe
 const formRecipe = document.querySelector('.add-recipe');

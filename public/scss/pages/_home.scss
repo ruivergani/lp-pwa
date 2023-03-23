@@ -468,3 +468,10 @@
 .margin-bottom{
   margin-bottom: 1.5rem;
 }
+iframe {
+  max-width: 320px !important;
+  min-width: 200px !important;
+}
+video{
+  display:block;
+}

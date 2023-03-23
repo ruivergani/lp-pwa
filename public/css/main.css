@@ -10870,4 +10870,15 @@ header nav .sidenav-trigger {
   margin-bottom: 1.5rem;
 }
 
+/* line 471, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+iframe {
+  max-width: 320px !important;
+  min-width: 200px !important;
+}
+
+/* line 475, ../../../../../Users/ruiverganineto/Desktop/UiBoost/lp-pwa/public/scss/pages/_home.scss */
+video {
+  display: block;
+}
+
 /*# sourceMappingURL=main.css.map */

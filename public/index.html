@@ -57,7 +57,12 @@
     <div class="container">
       <div class="top">
         <span data-aos="fade-down">Our Mission</span>
-        <img src="./img/dish.webp" alt="dish image" title="dish image">
+        <!-- Suitable optimised art-directed multi-resolution images -->
+        <picture>
+          <source media="(min-width:650px)" srcset="./img/dish-650px.png">
+          <source media="(min-width:465px)" srcset="./img/dish-465px.png">
+          <img src="./img/dish.webp" alt="Dish Image" style="width:auto;" title="Dish image">
+        </picture>
       </div>
       <h1 data-aos="fade-up">Help you find the best recipe</h1>
       <a href="./onboarding.html" class="arrow-right" data-aos="fade-left">

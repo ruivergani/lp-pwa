@@ -125,7 +125,7 @@
         const user = userCredential.user;
         console.log(user);
         alert("Registration successfully!!");
-        // ...
+        window.location.href = '/public/login.html';
       })
       .catch((error) => {
         const errorCode = error.code;

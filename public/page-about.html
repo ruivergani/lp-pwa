@@ -35,12 +35,13 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <style>
-  video{
-    display:block;
-  }
-  #canvas{
-    margin: 20px;
-  }
+    video{
+      display:block;
+    }
+    #canvas{
+      margin: 20px;
+      max-height: 200px;
+    }
   </style>
 </head>
 
@@ -91,7 +92,7 @@
     <section id="output" style="margin: 20px; max-width: 320px !important;">
 
     </section>
-    <canvas id="canvas" width="300" height="300">Please update your browser.</canvas>
+    <canvas id="canvas" width="200" height="200">Please update your browser.</canvas>
     <!-- Video element appears to need to be added to the page on iOS 13. This can be hidden (e.g. with CSS) in some browsers -->
     <video id="video" playsinline controls style="max-width: 320px; margin: 20px;"></video>
   <!-- Database Firebase -->

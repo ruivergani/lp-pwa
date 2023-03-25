@@ -132,6 +132,20 @@
     }
   }
 }
+.s-all-recipes{
+  padding: 2rem;
+  h4{
+    text-align: center;
+    color: $grey-400;
+  }
+  textarea{
+   font-size: 2rem;
+   border: 1px solid $grey-400;
+   padding: 1rem;
+   height: 300px;
+   
+  }
+}
 // Section Button Add Recipe
 .s-button{
   margin-top: 3rem;

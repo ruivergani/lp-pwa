@@ -66,6 +66,11 @@
     <!-- Card will be displayed here using JS-->
   </section>
 
+  <section class="s-all-recipes">
+    <h4>Recipes added using LocalStorage:</h4>
+    <textarea id="all_recipes" rows="10"></textarea>
+  </section>
+ 
   <!-- Add Button Recipe -->
   <!-- Contain at least one example of another component-->
   <section class="s-button">
@@ -85,16 +90,16 @@
       <div class="text-content row">
         <!-- Text input field -->
         <div class="input-field col s12">
-          <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
-          <label for="title" class="text-field">Recipe Title</label>
+          <input placeholder="e.g. Ninja soup" id="name_recipe" id="name_recipe" type="text" class="validate">
+          <label for="name_recipe" class="text-field" >Recipe Title</label>
         </div>
         <!-- Text input field -->
         <div class="input-field col s12">
-          <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
+          <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" name="ingredients" type="text" class="validate">
           <label for="ingredients" class="text-field">Ingredients</label>
         </div>
         <!-- Select field -->
-        <div class="input-field col s12">
+        <!-- <div class="input-field col s12">
           <select id="option">
             <option value="" disabled selected>Choose your option</option>
             <option value="10">10 minutes</option>
@@ -104,8 +109,8 @@
             <option value="45">45+ minutes</option>
           </select>
           <label class="formated-text">Average Cooking Time</label>
-        </div>
-        <!-- Upload the Image -->
+        </div> -->
+        <!-- Upload the Image
         <div class="file-field col s12 margin-bottom">
           <div class="btn">
             <span>File</span>
@@ -114,8 +119,8 @@
           <div class="file-path-wrapper">
             <input class="file-path validate" type="text" placeholder="Upload one or more files">
           </div>
-        </div>
-        <!-- Radio Buttons Type -->
+        </div> -->
+        <!-- Radio Buttons Type
         <div class="radio-buttons col s12">
           <label class="formated-text">Recommended Cooking Option</label>
           <p>
@@ -130,10 +135,10 @@
               <span>Oven</span>
             </label>
           </p>
-        </div>
+        </div> -->
         <!-- Button component -->
         <div class="input-field center">
-          <button class="btn-small">Add</button>
+          <button class="btn-small" type="button" name="add_recipe" id="add_recipe">Add</button>
         </div>
       </div>
     </form>
@@ -178,6 +183,7 @@
   <script src="./js/lib/aos.min.js"></script>
   <script src="./js/lib/materialize.min.js"></script>
   <script language="JavaScript" type="text/javascript" src="./js/main.js"></script>
+  <script language="JavaScript" type="text/javascript" src="./js/localStorage.js"></script>
 </body>
 </html>
 
